@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px ;
+            grid-template-rows: 150px 150px 150px 150px;
+            grid-template-areas: 
+            "it1 it2 it2 it3"
+            "it1 it4 it5 it6"
+            "it1 it7 it8 it6";
+            gap: 10px;
+        }
+        .container>div{
+            
+            padding: 30px;
+        }
+       
+        .iteam1{
+            grid-area: it1;
+            background-color: lightpink;
+
+        }
+        .iteam2{
+            grid-area: it2;
+            background-color:greenyellow;
+        }
+        .iteam3{
+            grid-area: it3;
+            background-color: brown;
+        }
+        
+        .iteam4{
+            grid-area: it4;
+            background-color: brown;
+        }
+        .iteam5{
+            grid-area: it5;
+            background-color: brown;
+        }
+        .iteam6{
+            grid-area: it6;
+            background-color:blueviolet;
+        }
+        .iteam7{
+            grid-area: it7;
+            background-color: brown;
+        }
+        .iteam8{
+            grid-area: it8;
+            background-color: brown;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Layout 3</h1>
+    <div class="container">
+        <div class="iteam1">Child1</div>
+        <div class="iteam2">Child2</div>
+        <div class="iteam3">Child3</div>
+        <div class="iteam4">Child4</div>
+        <div class="iteam5">Child5</div>
+        <div class="iteam6">Child6</div>
+        <div class="iteam7">Child7</div>
+        <div class="iteam8">Child8</div>
+
+
+    </div>
+    
+</body>
+</html>
